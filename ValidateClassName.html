@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="class" type="text"><button onclick="checkClassName()";>CheckClassName</button>
+<span id="result"></span>
+<script>
+    function checkClassName() {
+        let ex  =/^[CAP][0-9]{4}[GHIKLM]$/;
+        let name = document.getElementById('class').value;
+        let result = ex.test(name);
+        if (result) document.getElementById('result').innerHTML = 'The class name is valid';
+        else document.getElementById('result').innerHTML = 'The class name is not valid';
+    }
+
+</script>
+</body>
+</html>
